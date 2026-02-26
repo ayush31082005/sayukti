@@ -22,13 +22,14 @@ import TestimonialPolicy from '../footerPages/TestimonialPolicy.jsx'
 import OurBanker from '../footerPages/OurBanker.jsx'
 import VerifyOTP from '../pages/VerifyOTP.jsx'
 import Checkout from '../pages/Checkout.jsx'
+import Franchise from '../pages/Franchise.jsx'
 
 // ✅ Admin imports
 import AdminLayout from '../layouts/AdminLayout'
 import AdminDashboard from '../pages/admin/Dashboard'
 import AdminUsers from '../pages/admin/Users'
 import AdminProducts from '../pages/admin/Products'
-import AdminAnalytics from '../pages/admin/Analytics'
+import AdminFranchise from '../pages/admin/Franchise.jsx'
 import AdminRoute from '../routes/AdminRoutes.jsx'
 
 const MainRoutes = () => {
@@ -57,6 +58,7 @@ const MainRoutes = () => {
             <Route path='/banker' element={<OurBanker />} />
             <Route path='/verify-otp' element={<VerifyOTP />} />
             <Route path='/checkout' element={<Checkout />} />
+            <Route path='/franchise/list' element={<Franchise />} />
 
             {/* 🔥 Admin Routes (Nested) */}
             <Route path="/admin" element={
@@ -68,7 +70,7 @@ const MainRoutes = () => {
                 <Route path="dashboard" element={<AdminDashboard />} />
                 <Route path="users" element={<AdminUsers />} />
                 <Route path="products" element={<AdminProducts />} />
-                <Route path="analytics" element={<AdminAnalytics />} />
+                <Route path="franchise" element={<AdminFranchise />} />
             </Route>
 
         </Routes>

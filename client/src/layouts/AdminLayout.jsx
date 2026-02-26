@@ -14,7 +14,7 @@ const AdminLayout = () => {
         { path: '/admin/dashboard', label: 'Dashboard', icon: Home },
         { path: '/admin/users', label: 'Users', icon: Users },
         { path: '/admin/products', label: 'Products', icon: Package },
-        { path: '/admin/analytics', label: 'Analytics', icon: BarChart3 }
+        { path: '/admin/franchise', label: 'Franchise', icon: BarChart3 }
     ];
 
     // Logout function
@@ -98,8 +98,8 @@ const AdminLayout = () => {
                                 key={item.path}
                                 to={item.path}
                                 className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl mb-1 transition-all duration-200 ${isActive
-                                        ? 'bg-gradient-to-r from-green-50 to-green-100 text-green-700'
-                                        : 'text-gray-600 hover:bg-green-50'
+                                    ? 'bg-gradient-to-r from-green-50 to-green-100 text-green-700'
+                                    : 'text-gray-600 hover:bg-green-50'
                                     }`}
                             >
                                 <item.icon className={`h-5 w-5 ${isActive ? 'text-green-600' : ''}`} />

@@ -12,6 +12,7 @@ app.use("/api", require("./routes/authRoutes"));
 app.use("/api", require("./routes/contactRoutes"));
 app.use("/api/products", require("./routes/productRoutes"));
 app.use("/api/admin/users", require("./routes/adminUserRoutes"));
+app.use("/api/franchises", require("./routes/franchiseRoutes"));
 
 // Error handling for unknown routes
 app.use((req, res) => {
